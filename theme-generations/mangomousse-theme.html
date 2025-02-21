@@ -1,0 +1,337 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Theme3</title>
+    <style>
+        :root {
+            --base-font-size: 62.5%;
+            --default-font-size: 10px;
+            --default-text-size: 1.6rem;
+            --base-text-size: 1.2rem;
+            --base-font-family-serif: 'Times New Roman', Times, serif;
+            --base-font-family-sans-serif: Verdana, Geneva, Tahoma, sans-serif;    
+            --primary-text-color: #000000;
+
+            /* Primary Theme Colors */   
+            --cst-primary-100: #e6f4ff;          
+            --cst-primary-200: #b5daf5;          
+            --cst-primary-300: #88c2eb;          
+            --cst-primary-400: #5ca9e0;          
+            --cst-primary-500: #3592d6;          
+            --cst-primary-600: #2276b2;          
+            --cst-primary-700: #115c91;          
+            --cst-primary-800: #074470;          
+            --cst-primary-900: #002d4c;
+
+            /* Brand or Secondary Theme Colors */
+            --cst-secondary-100: #fff1e6;          
+            --cst-secondary-200: #ffd5b2;          
+            --cst-secondary-300: #ffb77d;          
+            --cst-secondary-400: #fc9847;          
+            --cst-secondary-500: #fd7e14;          
+            --cst-secondary-600: #d1650d;          
+            --cst-secondary-700: #a34d07;          
+            --cst-secondary-800: #783702;          
+            --cst-secondary-900: #4c2200;
+
+            /* Neutral Theme Colors */
+            --mui-neutral-100: #cfd8dc;
+            --mui-neutral-200: #B0BEC5;
+            --mui-neutral-300: #90A4AE;
+            --mui-neutral-400: #78909C;
+            --mui-neutral-500: #607d8b;
+            --mui-neutral-600: #546e7a;
+            --mui-neutral-700: #455a64;
+            --mui-neutral-800: #37474f;
+            --mui-neutral-900: #263238;
+
+            /* Support Colors */
+            --cst-support-error: #f22a18;
+            --cst-support-warning: #f2bc18;
+            --cst-support-success: #23f218;
+            --cst-support-info: #187af2;
+        } 
+        /* BASE Styles */
+        html {
+            /* The rem unit is relative to the root element's font size (html element) */
+            font-size: var(--default-font-size, 10px);
+        }   
+        body {
+            font-size: var(--default-text-size, 16px);
+            font-family: var(--base-font-family-sans-serif);
+            line-height: 1; /* meyerweb reset */
+        }       
+        p {
+            color: var(--primary-text-color, #000000);
+            font-size: var(--default-text-size);
+        }  
+        
+        /* PAGE Styles */
+        .palette-wrapper {
+            display: flex;
+        }
+        .swatch-bloc {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 0.75rem;
+            text-align: center;
+        }
+        .color-bloc {
+            width: 100px;
+            height: 100px;
+        }
+        .color-name {
+            background: #ccc;
+            font-size: var(--base-text-size);
+        }
+        /* Primary Colors Styles */
+        .cst-primary-100 {
+        background-color: var(--cst-primary-100);
+        }        
+        .cst-primary-200 {
+        background-color: var(--cst-primary-200);
+        }        
+        .cst-primary-300 {
+        background-color: var(--cst-primary-300);
+        }        
+        .cst-primary-400 {
+        background-color: var(--cst-primary-400);
+        }        
+        .cst-primary-500 {
+        background-color: var(--cst-primary-500);
+        }        
+        .cst-primary-600 {
+        background-color: var(--cst-primary-600);
+        }        
+        .cst-primary-700 {
+        background-color: var(--cst-primary-700);
+        }        
+        .cst-primary-800 {
+        background-color: var(--cst-primary-800);
+        }        
+        .cst-primary-900 {
+        background-color: var(--cst-primary-900);
+        }
+        /* Brand or Secondary Colors Styles */        
+        .cst-secondary-100 {
+        background-color: var(--cst-secondary-100);
+        }        
+        .cst-secondary-200 {
+        background-color: var(--cst-secondary-200);
+        }        
+        .cst-secondary-300 {
+        background-color: var(--cst-secondary-300);
+        }        
+        .cst-secondary-400 {
+        background-color: var(--cst-secondary-400);
+        }        
+        .cst-secondary-500 {
+        background-color: var(--cst-secondary-500);
+        }        
+        .cst-secondary-600 {
+        background-color: var(--cst-secondary-600);
+        }        
+        .cst-secondary-700 {
+        background-color: var(--cst-secondary-700);
+        }        
+        .cst-secondary-800 {
+        background-color: var(--cst-secondary-800);
+        }        
+        .cst-secondary-900 {
+        background-color: var(--cst-secondary-900);
+        }
+        /* Neutral Colors Styles */     
+        .mui-neutral-100 {
+            background-color: var(--mui-neutral-100);
+        }    
+        .mui-neutral-200 {
+            background-color: var(--mui-neutral-200);
+        }     
+        .mui-neutral-300 {
+            background-color: var(--mui-neutral-300);
+        }     
+        .mui-neutral-400 {
+            background-color: var(--mui-neutral-400);
+        }     
+        .mui-neutral-500 {
+            background-color: var(--mui-neutral-500);
+        }    
+        .mui-neutral-600 {
+            background-color: var(--mui-neutral-600);
+        }     
+        .mui-neutral-700 {
+            background-color: var(--mui-neutral-700);
+        }     
+        .mui-neutral-800 {
+            background-color: var(--mui-neutral-800);
+        }     
+        .mui-neutral-900 {
+            background-color: var(--mui-neutral-900);
+        }          
+
+        /* Support Colors Styles */       
+        .cst-support-error {
+            background-color: var(--cst-support-error);
+        }     
+        .cst-support-warning {
+            background-color: var(--cst-support-warning);
+        }     
+        .cst-support-success {
+            background-color: var(--cst-support-success);
+        }     
+        .cst-support-info {
+            background-color: var(--cst-support-info);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Color Theme</h1>
+    <h2>Color theme: Mango Mousse Primary Colors</h2>
+    <div class="palette-wrapper primary-colors">
+        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-primary-100"></div>
+            <p class="color-name">cst-primary-100</p>
+        </div>        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-primary-200"></div>
+            <p class="color-name">cst-primary-200</p>
+        </div>        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-primary-300"></div>
+            <p class="color-name">cst-primary-300</p>
+        </div>        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-primary-400"></div>
+            <p class="color-name">cst-primary-400</p>
+        </div>        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-primary-500"></div>
+            <p class="color-name">cst-primary-500</p>
+        </div>        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-primary-600"></div>
+            <p class="color-name">cst-primary-600</p>
+        </div>        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-primary-700"></div>
+            <p class="color-name">cst-primary-700</p>
+        </div>        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-primary-800"></div>
+            <p class="color-name">cst-primary-800</p>
+        </div>        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-primary-900"></div>
+            <p class="color-name">cst-primary-900</p>
+        </div>
+        
+    </div>
+    <h2>Color theme: Mango Mousse Brand or Secondary Colors</h2>
+    <div class="palette-wrapper secondary-colors">
+        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-secondary-100"></div>
+            <p class="color-name">cst-secondary-100</p>
+        </div>        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-secondary-200"></div>
+            <p class="color-name">cst-secondary-200</p>
+        </div>        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-secondary-300"></div>
+            <p class="color-name">cst-secondary-300</p>
+        </div>        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-secondary-400"></div>
+            <p class="color-name">cst-secondary-400</p>
+        </div>        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-secondary-500"></div>
+            <p class="color-name">cst-secondary-500</p>
+        </div>        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-secondary-600"></div>
+            <p class="color-name">cst-secondary-600</p>
+        </div>        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-secondary-700"></div>
+            <p class="color-name">cst-secondary-700</p>
+        </div>        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-secondary-800"></div>
+            <p class="color-name">cst-secondary-800</p>
+        </div>        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-secondary-900"></div>
+            <p class="color-name">cst-secondary-900</p>
+        </div>
+        
+    </div>
+    <h2>Color theme: Mango Mousse Neutral Colors</h2>
+    <div class="palette-wrapper secondary-colors">      
+        <div class="swatch-bloc">
+            <div class="color-bloc mui-neutral-100"></div>
+            <p class="color-name">mui-neutral-100</p>
+        </div>    
+        <div class="swatch-bloc">
+            <div class="color-bloc mui-neutral-200"></div>
+            <p class="color-name">mui-neutral-200</p>
+        </div>    
+        <div class="swatch-bloc">
+            <div class="color-bloc mui-neutral-300"></div>
+            <p class="color-name">mui-neutral-300</p>
+        </div>  
+        <div class="swatch-bloc">
+            <div class="color-bloc mui-neutral-400"></div>
+            <p class="color-name">mui-neutral-400</p>
+        </div>  
+        <div class="swatch-bloc">
+            <div class="color-bloc mui-neutral-500"></div>
+            <p class="color-name">mui-neutral-500</p>
+        </div>  
+        <div class="swatch-bloc">
+            <div class="color-bloc mui-neutral-600"></div>
+            <p class="color-name">mui-neutral-600</p>
+        </div>  
+        <div class="swatch-bloc">
+            <div class="color-bloc mui-neutral-700"></div>
+            <p class="color-name">mui-neutral-700</p>
+        </div>  
+        <div class="swatch-bloc">
+            <div class="color-bloc mui-neutral-800"></div>
+            <p class="color-name">mui-neutral-800</p>
+        </div>  
+        <div class="swatch-bloc">
+            <div class="color-bloc mui-neutral-900"></div>
+            <p class="color-name">mui-neutral-900</p>
+        </div>
+    </div>
+
+    <h2>Color theme: Mango Mousse Supporting Colors</h2>
+    <div class="palette-wrapper support-colors">
+        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-support-error"></div>
+            <p class="color-name">cst-support-100</p>
+        </div>        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-support-warning"></div>
+            <p class="color-name">cst-support-warning</p>
+        </div>        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-support-success"></div>
+            <p class="color-name">cst-support-success</p>
+        </div>        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-support-info"></div>
+            <p class="color-name">cst-support-info</p>
+        </div>    
+        
+    </div>
+    
+</body>
+</html>

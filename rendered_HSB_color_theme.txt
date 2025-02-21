@@ -1,0 +1,11 @@
+/* Brand color theme */
+
+--cst-primary-100: #e6fffa;
+--cst-primary-200: #b2fff1;
+--cst-primary-300: #7dffe7;
+--cst-primary-400: #47fcdb;
+--cst-primary-500: #14fcd2;
+--cst-primary-600: #0dd1ad;
+--cst-primary-700: #07a386;
+--cst-primary-800: #027862;
+--cst-primary-900: #004c3e;

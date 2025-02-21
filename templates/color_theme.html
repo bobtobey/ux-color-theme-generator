@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Theme3</title>
+    <style>
+        :root {
+            --base-font-size: 62.5%;
+            --default-font-size: 10px;
+            --default-text-size: 1.6rem;
+            --base-text-size: 1.2rem;
+            --base-font-family-serif: 'Times New Roman', Times, serif;
+            --base-font-family-sans-serif: Verdana, Geneva, Tahoma, sans-serif;    
+            --primary-text-color: #000000;
+
+          {% for variable_line in colors %}
+            {{ variable_line }}
+          {% endfor %}
+        } 
+        /* BASE Styles */
+        html {
+            /* The rem unit is relative to the root element's font size (html element) */
+            font-size: var(--default-font-size, 10px);
+        }   
+        body {
+            font-size: var(--default-text-size, 16px);
+            font-family: var(--base-font-family-sans-serif);
+            line-height: 1; /* meyerweb reset */
+        }       
+        p {
+            color: var(--primary-text-color, #000000);
+            font-size: var(--default-text-size);
+        }  
+        
+        /* PAGE Styles */
+        .palette-wrapper {
+            display: flex;
+        }
+        .swatch-bloc {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 0.75rem;
+            text-align: center;
+        }
+        .color-bloc {
+            width: 100px;
+            height: 100px;
+        }
+        .color-name {
+            background: #ccc;
+            font-size: var(--base-text-size);
+        }
+        {% for classname in classnames %}
+        .{{ classname }} {
+        background-color: var(--{{ classname }});
+        }
+        {% endfor %}
+    </style>
+</head>
+<body>
+    <h1>Color Theme</h1>
+    <h2>Color theme: {{ theme_name }}</h2>
+    <div class="palette-wrapper">
+        {% for classname in classnames %}
+        <div class="swatch-bloc">
+            <div class="color-bloc {{ classname }}"></div>
+            <p class="color-name">{{ classname }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    
+</body>
+</html>

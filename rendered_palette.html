@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Theme3</title>
+    <style>
+        :root {
+            --base-font-size: 62.5%;
+            --default-font-size: 10px;
+            --default-text-size: 1.6rem;
+            --base-text-size: 1.2rem;
+            --base-font-family-serif: 'Times New Roman', Times, serif;
+            --base-font-family-sans-serif: Verdana, Geneva, Tahoma, sans-serif;    
+            --primary-text-color: #000000;
+
+          
+            --cst-primary-100: #e6fffa;
+          
+            --cst-primary-200: #b2fff1;
+          
+            --cst-primary-300: #7dffe7;
+          
+            --cst-primary-400: #47fcdb;
+          
+            --cst-primary-500: #14fcd2;
+          
+            --cst-primary-600: #0dd1ad;
+          
+            --cst-primary-700: #07a386;
+          
+            --cst-primary-800: #027862;
+          
+            --cst-primary-900: #004c3e;
+          
+        } 
+        /* BASE Styles */
+        html {
+            /* The rem unit is relative to the root element's font size (html element) */
+            font-size: var(--default-font-size, 10px);
+        }   
+        body {
+            font-size: var(--default-text-size, 16px);
+            font-family: var(--base-font-family-sans-serif);
+            line-height: 1; /* meyerweb reset */
+        }       
+        p {
+            color: var(--primary-text-color, #000000);
+            font-size: var(--default-text-size);
+        }  
+        
+        /* PAGE Styles */
+        .palette-wrapper {
+            display: flex;
+        }
+        .swatch-bloc {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 0.75rem;
+            text-align: center;
+        }
+        .color-bloc {
+            width: 100px;
+            height: 100px;
+        }
+        .color-name {
+            background: #ccc;
+            font-size: var(--base-text-size);
+        }
+        
+        .cst-primary-100 {
+        background-color: var(--cst-primary-100);
+        }
+        
+        .cst-primary-200 {
+        background-color: var(--cst-primary-200);
+        }
+        
+        .cst-primary-300 {
+        background-color: var(--cst-primary-300);
+        }
+        
+        .cst-primary-400 {
+        background-color: var(--cst-primary-400);
+        }
+        
+        .cst-primary-500 {
+        background-color: var(--cst-primary-500);
+        }
+        
+        .cst-primary-600 {
+        background-color: var(--cst-primary-600);
+        }
+        
+        .cst-primary-700 {
+        background-color: var(--cst-primary-700);
+        }
+        
+        .cst-primary-800 {
+        background-color: var(--cst-primary-800);
+        }
+        
+        .cst-primary-900 {
+        background-color: var(--cst-primary-900);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Color Theme</h1>
+    <h2>Color theme: Brand</h2>
+    <div class="palette-wrapper">
+        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-primary-100"></div>
+            <p class="color-name">cst-primary-100</p>
+        </div>
+        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-primary-200"></div>
+            <p class="color-name">cst-primary-200</p>
+        </div>
+        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-primary-300"></div>
+            <p class="color-name">cst-primary-300</p>
+        </div>
+        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-primary-400"></div>
+            <p class="color-name">cst-primary-400</p>
+        </div>
+        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-primary-500"></div>
+            <p class="color-name">cst-primary-500</p>
+        </div>
+        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-primary-600"></div>
+            <p class="color-name">cst-primary-600</p>
+        </div>
+        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-primary-700"></div>
+            <p class="color-name">cst-primary-700</p>
+        </div>
+        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-primary-800"></div>
+            <p class="color-name">cst-primary-800</p>
+        </div>
+        
+        <div class="swatch-bloc">
+            <div class="color-bloc cst-primary-900"></div>
+            <p class="color-name">cst-primary-900</p>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
