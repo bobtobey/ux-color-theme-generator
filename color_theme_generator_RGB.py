@@ -1,3 +1,9 @@
+# Author: Bob Tobey
+# Date: 2025-02-01
+# How To Use: Open linux terminal (WSL) and run the script with Python 3.
+# Example: python3 color_theme_generator_RGB.py
+# How To: Run this script to generate a color palette based on a brand color.
+# The palette is generated in HSB format and converted to HEX for CSS use.
 def interpolate(a, b, steps):
     """
     Returns a list of 'steps+1' values from a to b (inclusive),

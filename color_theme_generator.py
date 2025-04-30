@@ -165,7 +165,7 @@ if __name__ == "__main__":
         # 2) RGB(234, 230, 255)
         rgb_line = f"{label}: RGB({r}, {g}, {b_})"
         # 3) --cst-primary-100: #eae6ff;
-        hex_line = f"--cst-primary-{label}: {hex_val};"
+        hex_line = f"--clr-primary-{label}: {hex_val};"
         # 4) --cst-primary-100: rgb(234, 230, 255);
         hex_line_classname = f"cst-primary-{label}"
 

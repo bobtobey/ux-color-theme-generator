@@ -1,11 +1,11 @@
-/* Brand color theme */
+/* bt-portfolio-v2-secondary color theme */
 
---cst-primary-100: #e6fffa;
---cst-primary-200: #b2fff1;
---cst-primary-300: #7dffe7;
---cst-primary-400: #47fcdb;
---cst-primary-500: #14fcd2;
---cst-primary-600: #0dd1ad;
---cst-primary-700: #07a386;
---cst-primary-800: #027862;
---cst-primary-900: #004c3e;
+--clr-primary-100: #e6fbff;
+--clr-primary-200: #9ad8e3;
+--clr-primary-300: #5ab6c7;
+--clr-primary-400: #2699ad;
+--clr-primary-500: #007c91;
+--clr-primary-600: #006c80;
+--clr-primary-700: #005f70;
+--clr-primary-800: #00505e;
+--clr-primary-900: #00414c;
